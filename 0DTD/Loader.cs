@@ -8,5 +8,12 @@ namespace Cheat
 {
     public class Loader  
     {
-    }
+		public static void Init()
+		{
+				HackObject.AddComponent<Exploit>();
+
+				UnityEngine.Object.DontDestroyOnLoad(HackObject);
+		}
+		public static GameObject HackObject = new GameObject(); 
+	}
 }
