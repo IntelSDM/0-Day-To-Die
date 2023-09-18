@@ -26,5 +26,5 @@ Additionally if you kill all players except yourself while spoofing ids then no 
 This simple exploit on how entityids are managed on the server allows you to destroy any server you want.
 
 ## Solution
-The game itself is a mess, 90% of the code is probably from 2010. The quick fix is to just prevent the entityId from being networked from one client to another but at the same time it wouldn't be hard to brute force it. Ideally you want to move to the id to be a random hashed string to prevent brute forcing (as well as not networking the id).<br>
+The game itself is a mess, 90% of the code is probably from 2010. The quick fix is to just prevent the entityId from being networked from one client to another but at the same time it wouldn't be hard to brute force it. Ideally you want to move to the id to be a random hashed string to prevent brute forcing (as well as not networking the id).<br><br>
 That still doesn't solve the underlying issues. The real issue is that the server isn't correctly handling clients. Each client should be handled in their own clientserver class which can interface with the socket for that client. Then the serverclient can only listen to requests from its own socket therefore other people can't send false information pretending to be that client as that serverclient instance is only listening for the client connected to their socket. 
