@@ -1,7 +1,7 @@
 # 0-Day-To-Die
 
 0 Day Exploit Within 7 Days To Die. This exploit allows you to wipe user saved data, Prevent players playing on a server and all around just destroy everyone's progress on a server.<br>
-Credits to [Elijah](https://github.com/ElijahDD) for the help. <be>
+Credits to [Elijah](https://github.com/ElijahDD) for the help. <br>
 As of 20th November 2023 [this has been patched](https://github.com/IntelSDM/0-Day-To-Die\Images\5.png).
 
 ## Images
